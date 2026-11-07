@@ -368,6 +368,7 @@ namespace MausHighlighter
             MinimizeBox = false;
             StartPosition = FormStartPosition.CenterScreen;
             ClientSize = new Size(440, 684);
+            try { Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath); } catch { } // App-Icon aus der exe
             TopMost = true;
 
             // ---- Kreis

@@ -1,5 +1,7 @@
 # Maus-Highlighter
 
+<img src="MausHighlighter.png" width="96" alt="Icon">
+
 Kleines Windows-Tool, das den Mauszeiger mit einem farbigen Kreis hervorhebt – ideal für Präsentationen,
 Bildschirmaufnahmen und Screen-Sharing.
 
@@ -29,6 +31,11 @@ build.cmd
 ```
 
 Nutzt den in Windows enthaltenen C#-Compiler (`csc.exe` aus dem .NET Framework 4.x), es muss nichts installiert werden.
+Das Programm-Icon (`MausHighlighter.ico`) wird dabei in die exe eingebettet. Neu erzeugen lässt es sich mit:
+
+```bat
+powershell -ExecutionPolicy Bypass -File tools\make-icon.ps1
+```
 
 ### Entwickler-Optionen
 
